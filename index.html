@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<title> Projekt HTDP. Web application. </title>
+	<meta name ="description" content="Przed toba projekt na Htdp"/>
+	<meta name="keywords" content ="transport, ciezarowki, tir"/>
+	<meta http-equiv="X-UA-Compatible" condensed="IE=edge.chrome=1"/>
+	<style>
+	#container
+	{
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: gray;
+		opacity:0.8;
+	}
+	#logo
+	{
+		background-color: black;
+		color:white;
+		text-align:center;
+		padding:15px;
+	}
+	#nav
+	{
+		float:left;
+		width:140px;
+		min-height:1060px;
+		padding: 10px;
+		color: black;
+		background-color: silver;
+		
+	}
+	#content
+	{
+		float:left;
+		padding: 10px;
+		width: 640px;
+		color: black;
+	}	
+	#ad
+	{
+		float:left;
+		width: 160px;
+		min-height: 1060px;
+		padding: 10px;
+		color: black;
+		text-decoration:none;
+		background-color: silver;
+	}
+	#footer
+	{
+		background-color: navy;
+		color: white;
+		text-align: center;
+		padding: 20px;
+		clear:both;
+	}
+	
+
+
+	
+	</style>
+	
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body 
+background ="tlo2.jpg"style="background-size: 70%;"
+	<h1> Projekt HTDP. Web application.</h1>
+	
+	<div id="container">
+	
+		<div id="logo">
+		<h1>Najpopularniejsze 10 samochodow ciezarowych!</h1>
+		</div>
+		<div id="nav">
+		<b>
+		<h2>Nawigacja<h2>
+		<h3>
+		</br></br>
+		
+		<a href="https://www.trans.eu" class="tilelink" target="_blank" > Zamów transport. </a> <br/><br/>
+		<a href="https://www.jango.com/" class="tilelink" target="_blank" > Sprawdź, który samochód udzwignie twoj tonaż. </a> <br/><br/>
+		<a href="https://www.autocentrum.pl/publikacje/na-luzie/top-10-ciezarowki-jakich-nie-spotykasz-na-naszych-drogach/" class="tilelink" target="_blank" > Pokaż, zdjęcia pojazdów. </a> <br/><br/>
+		<br/>
+		<a href="https://twojmechanik.com/2020/09/07/rodzaje-przyczep-poznaj-je-wszystkie/" class="tilelink" target="_blank" > Wyświetl przyczepy i informacje o nich. <br/> <br/></a>
+		</b>
+		<h3>
+		</div>
+		
+		<div id="content">
+		<h2>Narzędzie pomoże dobrać odpowiedni samochód do twoich potrzeb :)</h2><br/>
+		<h3>Klikając w poniższe nazwy modeli sprawdzisz szczegóły dotyczace danego samochodu. Wprowadz poniższe informacje a dobierzemy odpowiednia naczepe a także samochód.</h3><br>
+		<h1>Top 10 najlepszych ciągników:</h1>
+		
+		<h3>
+		<b>
+		<a href ="https://www.mzkt.by/en/katalog/truck-tractors+/mzkt-750440/"class="tilelink" target="_blank" >  1. Volat 750440-010 </a> <br/>
+		<a href ="https://www.hino-global.com/products/trucks/hino700/"class="tilelink" target="_blank" >  2. Hino 700 </a> <br/>
+		<a href ="https://dir.indiamart.com/items/ashok-leyland-captain-2523-hr-tipper-truck-25-ton-gvw-s90969.html"class="tilelink" target="_blank" >3. Ashok Leyland Captain </a> <br/>
+		4. Ford Cargo <br/>
+		5. SISU Polar <br/>
+		6. Iveco Strator <br/>
+		7. Uro K5-30.16 <br/>
+		8. Ural Next <br/>
+		9.Hyundai Xcient <br/>
+		10. FAW J6P <br/>
+		<form action="order.php" method="GET">
+		</h3>
+		</b>
+		<span style ="color: white">
+		
+		<div class="row">
+		<form action="orders.php" method="post">
+			<fieldset>
+			<span style ="color: navy">
+				<h2> Ile chcesz przewieźć?(w kilogramach) </h2>
+				<input> <label></label>kg
+				<h2><legend> Sposób załadunku:Jesli waga mniejsza niz 25t to taka przyczepa, jesli wieszka to taka. </legend>
+				<div><label><input type="radio" value="1" name="nadwozie" checked> Od tyłu
+				</label></div>
+				<div><label><input type="radio" value="1" name="nadwozie" checked> Z boku
+				</label></div>
+				<div><label><input type="radio" value="1" name="nadwozie" checked> Obie powyższe
+				</label></div>
+				
+			</fieldset>
+		</div>
+		</span>
+		</h2>
+			
+		<div class="row">
+		
+		<h3>
+		<fieldset>
+		<legend>Ciągnik</legend>
+		<h2>
+		<span style ="color: black"><label for="silnik"> Rodzaj silnika - zaleznie od wyboru wyswietlic propozycje </label></span>
+		</h2>
+			<select id="silnik" name="silnik">
+				<option value="w">wysokoprężny</option>
+				<option value="b">benzynowy</option>
+				<option value="e">elektryczny</option>
+				<option value="h">hybrydowy</option>
+			</select>
+			<input type="submit" value="Wyslij zamowienie"/>
+		</br>
+		</br>
+			<label>
+			<div><label><input type="radio" value="1" name="nadwozie" checked> Naczepa odlaczana
+			</label></div>	
+			<label>
+			<div><label><input type="radio" value="1" name="nadwozie" checked> Naczepa stała
+			</label></div>	
+		</fieldset>	
+		</div>
+		</form>
+		</h3>
+		
+
+
+	</div>
+		<div id="ad">
+			<img src="ad.jpg"/>
+		1. Volat 750440-010 <br/>
+		2. Hino 700 <br/>
+		3. Ashok Leyland Captain <br/>
+		4. Ford Cargo <br/>
+		5. SISU Polar <br/>
+		6. Iveco Strator <br/>
+		7. Uro K5-30.16 <br/>
+		8. Ural Next <br/>
+		9.Hyundai Xcient <br/>
+		10. FAW J6P <br/>
+		</div>
+		<div id="footer">
+	Najlepsze ciężarówki - TOP 10! &copy; Wszelkie prawa zastrzeżone.
+		</div>
+	</div>
+	<?php
+	
+	echo "hello world!";
+
+	?>	
+
+</body>
+</html>
