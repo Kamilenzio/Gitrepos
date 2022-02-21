@@ -106,18 +106,47 @@ background ="tlo2.jpg"style="background-size: 70%;"
 		8. Ural Next <br/>
 		9.Hyundai Xcient <br/>
 		10. FAW J6P <br/>
-		<form action="order.php" method="GET">
+		
 		</h3>
 		</b>
 		<span style ="color: white">
 		
 		<div class="row">
-		<form action="orders.php" method="post">
+
+		</form>
+		
+		
+		
+		
+		
 			<fieldset>
 			<span style ="color: navy">
+				<h1> Dobór naczepy </h1>
 				<h2> Ile chcesz przewieźć?(w kilogramach) </h2>
-				<input> <label></label>kg
-				<h2><legend> Sposób załadunku:Jesli waga mniejsza niz 25t to taka przyczepa, jesli wieszka to taka. </legend>
+		<script>
+			function button_click()
+			{
+			var name = document.buttons_and_textboxes.input_text.value;
+			if (name == '')
+			{
+			alert('No value provided');
+			}
+			if (name < 22000 && name > 0)
+			{
+			window.location="file:///C:/Users/kamil/Desktop/www/resultsdo25t.html";
+			}
+			if (name > 22000 && name > 0)
+			{
+			window.location="file:///C:/Users/kamil/Desktop/www/resultspowyzej25t.html";
+			}
+			}
+		</script>
+		<form name="buttons_and_textboxes">
+		<p><b>Podaj wartość</b></p>
+		<input type="text" name="input_text" value='' />kg
+		<input type="button" name="input_button" value="confirm" onclick="button_click()" />
+				
+				<h2><legend>  </legend>
 				<div><label><input type="radio" value="1" name="nadwozie" checked> Od tyłu
 				</label></div>
 				<div><label><input type="radio" value="1" name="nadwozie" checked> Z boku
@@ -138,13 +167,43 @@ background ="tlo2.jpg"style="background-size: 70%;"
 		<h2>
 		<span style ="color: black"><label for="silnik"> Rodzaj silnika - zaleznie od wyboru wyswietlic propozycje </label></span>
 		</h2>
-			<select id="silnik" name="silnik">
-				<option value="w">wysokoprężny</option>
-				<option value="b">benzynowy</option>
-				<option value="e">elektryczny</option>
-				<option value="h">hybrydowy</option>
-			</select>
-			<input type="submit" value="Wyslij zamowienie"/>
+		
+		
+	
+	
+	<select id="item1" name="Item 1">
+      <option></option>
+      <option value="1">Wysokoprężny</option>
+      <option value="2">Benzynowy</option>
+      <option value="3">Hybryda</option>
+    </select>
+	
+	<input type="button" name="input_button" value="confirm" onclick="message()" />
+    
+
+		<script>
+		function message() {
+		var s = document.getElementById('item1');
+		var item1 = s.options[s.selectedIndex].value;
+		
+		
+		if(item1 == '') {
+		alert('No value provided')
+		}
+		if(item1 == '1') {
+        window.location="file:///C:/Users/kamil/Desktop/www/wysokoprezne.html";
+		} 
+		else if(item1 == '2') {
+        window.location="file:///C:/Users/kamil/Desktop/www/benzynowe.html";
+		} 
+		else if(item1 == '3') {
+        alert('Obecnie nie posiadamy pojazdów z silnikami hybrydowymi do zaoferowania :)')
+		}
+		}
+		</script>
+		
+
+		
 		</br>
 		</br>
 			<label>
@@ -163,16 +222,7 @@ background ="tlo2.jpg"style="background-size: 70%;"
 	</div>
 		<div id="ad">
 			<img src="ad.jpg"/>
-		1. Volat 750440-010 <br/>
-		2. Hino 700 <br/>
-		3. Ashok Leyland Captain <br/>
-		4. Ford Cargo <br/>
-		5. SISU Polar <br/>
-		6. Iveco Strator <br/>
-		7. Uro K5-30.16 <br/>
-		8. Ural Next <br/>
-		9.Hyundai Xcient <br/>
-		10. FAW J6P <br/>
+		Miejsce na twoją reklame
 		</div>
 		<div id="footer">
 	Najlepsze ciężarówki - TOP 10! &copy; Wszelkie prawa zastrzeżone.

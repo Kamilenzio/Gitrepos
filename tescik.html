@@ -1,0 +1,28 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+		<script>
+			function button_click()
+			{
+			var name = document.buttons_and_textboxes.input_text.value;
+			if (name == '')
+			{
+			alert('noname');
+			}
+			else
+			{
+			alert('hello ' + name);
+			}
+			}
+		</script>
+			
+		<form name="buttons_and_textboxes">
+		<p><b>Please enter your name:</b></p>
+		<input type="text" name="input_text" value='' /><br />
+		<input type="button" name="input_button" value="confirm" onclick="button_click()" />
+		</form>
+		</body>
+		</html>
