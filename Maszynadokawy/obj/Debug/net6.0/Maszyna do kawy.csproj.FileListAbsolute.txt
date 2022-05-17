@@ -1,0 +1,15 @@
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\bin\Debug\net6.0\Maszyna do kawy.exe
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\bin\Debug\net6.0\Maszyna do kawy.deps.json
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\bin\Debug\net6.0\Maszyna do kawy.runtimeconfig.json
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\bin\Debug\net6.0\Maszyna do kawy.dll
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\bin\Debug\net6.0\ref\Maszyna do kawy.dll
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\bin\Debug\net6.0\Maszyna do kawy.pdb
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\obj\Debug\net6.0\Maszyna do kawy.csproj.AssemblyReference.cache
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\obj\Debug\net6.0\Maszyna do kawy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\obj\Debug\net6.0\Maszyna do kawy.AssemblyInfoInputs.cache
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\obj\Debug\net6.0\Maszyna do kawy.AssemblyInfo.cs
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\obj\Debug\net6.0\Maszyna do kawy.csproj.CoreCompileInputs.cache
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\obj\Debug\net6.0\Maszyna do kawy.dll
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\obj\Debug\net6.0\ref\Maszyna do kawy.dll
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\obj\Debug\net6.0\Maszyna do kawy.pdb
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Maszyna do kawy\obj\Debug\net6.0\Maszyna do kawy.genruntimeconfig.cache

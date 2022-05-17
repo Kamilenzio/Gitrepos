@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "id9Esj/82F+Jvohbx0/a5hQa1I5IrHzYQGLljHloBp9daftderunrandeOmXKZOm8eXf+U//W2ZcXnDLg4DjHA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kamil\\Desktop\\Studia semestr 2\\Programowanie zorientowanie obiektowo lab\\Projekt na HTDP\\Projekt na HTDP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kamil\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

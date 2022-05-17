@@ -1,0 +1,16 @@
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\bin\Debug\net5.0\Projekt na HTDP.exe
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\bin\Debug\net5.0\Projekt na HTDP.deps.json
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\bin\Debug\net5.0\Projekt na HTDP.runtimeconfig.json
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\bin\Debug\net5.0\Projekt na HTDP.runtimeconfig.dev.json
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\bin\Debug\net5.0\Projekt na HTDP.dll
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\bin\Debug\net5.0\ref\Projekt na HTDP.dll
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\bin\Debug\net5.0\Projekt na HTDP.pdb
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\obj\Debug\net5.0\Projekt na HTDP.csproj.AssemblyReference.cache
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\obj\Debug\net5.0\Projekt na HTDP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\obj\Debug\net5.0\Projekt na HTDP.AssemblyInfoInputs.cache
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\obj\Debug\net5.0\Projekt na HTDP.AssemblyInfo.cs
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\obj\Debug\net5.0\Projekt na HTDP.csproj.CoreCompileInputs.cache
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\obj\Debug\net5.0\Projekt na HTDP.dll
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\obj\Debug\net5.0\ref\Projekt na HTDP.dll
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\obj\Debug\net5.0\Projekt na HTDP.pdb
+C:\Users\kamil\Desktop\Studia semestr 2\Programowanie zorientowanie obiektowo lab\Projekt na HTDP\obj\Debug\net5.0\Projekt na HTDP.genruntimeconfig.cache
