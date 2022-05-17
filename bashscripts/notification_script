@@ -1,0 +1,29 @@
+#!/bin/bash
+
+var=$(chage -l lolek | grep 'Password expires' | awk '{print$4, $5, $6}')
+daystoalert=10;
+todaydate=$(date +%s)
+compresseddate=$(date -d "$var" +%s)
+sumdaysleft=$(($compresseddate-$todaydate))
+dayscount=$(($sumdaysleft / 60 /60 / 24))
+
+echo "Today is: `date -d 'today' +%d,%B,%Y`"
+
+echo "Password expire date: $var days"
+echo "Your password will expire in $dayscount days"
+
+if [ "$dayscount" -lt "$daystoalert" ];
+
+then
+
+
+        echo "I will send notification"
+curl  --url 'smtps://smtp.wp.pl:465' \
+ --ssl-reqd \
+ --mail-from 'xxx@wp.pl' \
+ --mail-rcpt 'xxx@gmail.com' \
+ --user 'xxx@wp.pl:xxx' \
+ -T <(echo -e 'From: xxx@wp.pl\nTo: xxx@gmail.com\nSubject: Curl Test\n\nHello')
+
+else    echo "Notification no needed, password still up to date"
+fi
