@@ -1,0 +1,59 @@
+#!/usr/bin/python3
+import os
+
+os.system('ls -l')
+os.system('pwd')
+
+
+tasks = []
+
+def show_tasks():
+    task_index = 0
+    for task in tasks:
+        print(task + " [" + str(task_index) + "]")
+        task_index += 1
+def add_task():
+    task = input ("wpisz tresc zadania: ")
+    tasks.append(task)
+    print()
+    print("dodano zadanie")
+def delete_task():
+    task_index = int(input("Podaj indeks zadania do usuniecia: "))
+    if task_index < 0 or task_index > len(tasks) -1:
+        print("Zadanie o tym indeksie nie istnieje")
+        return
+    tasks.pop(task_index) #funkcja pop usuwa z tablicy
+    print('Usunieto indeks ' + str(task_index))
+def save_tasks_to_file():
+    file = open("tasks.txt", "w")
+    for task in tasks:
+        file.write(task+"\n")
+    file.close()
+def load_tasks_from_file():
+
+    try:
+        file = open("tasks.txt")
+        for line in file.readlines():
+            tasks.append(line.strip())
+        file.close()
+    except FileNotFoundError:
+        return
+load_tasks_from_file()
+wybor = -1
+while wybor != 5:
+    if wybor == 1:
+        show_tasks()
+    if wybor == 2:
+        add_task()
+    if wybor == 3:
+        delete_task()
+        print()
+    if wybor == 4:
+        save_tasks_to_file()
+    print("1. Pokaz zadania");
+    print("2. Dodaj zadania");
+    print("3. Usun zadania");
+    print("4. Zapisz zmiany do pliku");
+    print("5. Wyjdz");
+    wybor = int(input("Wybierz opcje: "))
+    print()
