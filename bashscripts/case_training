@@ -1,0 +1,28 @@
+#!/bin/bash
+
+while :
+do
+echo "Wybierz jedna z opcji "
+echo "1. Na kim jestem zalogowany?"
+echo "2. Wyswietl strukture partycji"
+echo "3. Informacje o systemie"
+echo "4. Wyjscie z petli"
+echo -n "Wybierz numer [1 - 4]"
+read option
+clear
+case $option in
+1) echo "Zalogowany jako:"
+whoami
+echo;;
+2) echo "Miejsce na dysku";
+df -h
+echo;;
+3) uname -r
+echo;;
+4) echo "Wyjscie z pentli";
+exit 1;;
+*) echo "$option jest blednym wyborem";
+echo "Wybierz inna opcje...";
+read option2;
+esac
+done
