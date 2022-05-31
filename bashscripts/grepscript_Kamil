@@ -1,0 +1,71 @@
+#!/bin/bash
+echo "Choose scoupe to search keyword"
+echo "1. Grep in USG enterpriseLog.log & TPFC transaction.log + TPFC eliotLog.log"
+echo "2. Grep in USG eliotLog.log"
+echo "3. Grep in 2SG 2sg-transactions.log"
+echo "4. Grep in 2SG 2sg.log"
+echo "5. Grep in BUS bus.tx.log"
+echo "6. Grep in BUS bus.log"
+read answer
+
+if [ "$answer" = "1" ]
+then
+        echo "Enter keyword e.g transaction ID ";
+        read klucz1
+        echo "Enter date in format 2022-03-15-02"
+        read date
+echo "############################# USG log enterpriseLog.log for $klucz1 #############################################"
+        zgrep ""$klucz1"" /folder/nas_usg/sws*/logs/sws/usg*/enterpriseLog.log.$date
+echo "############################# TPFC log transaction.log for $klucz1  #############################################"
+        zgrep ""$klucz1"" /folder/nas_tpfc/sws*/logs/sws/tpfc*/transaction.log.$date
+echo "##################### Enter id: from enterpriseLog.log to check TPFC eliotLog.log ###############"
+	read eliot
+	zgrep ""$eliot"" /folder/nas_tpfc/sws*/logs/sws/tpfc*/eliotLog.log.$date
+
+elif [ "$answer" = "2" ]
+then
+        echo "Enter TxID to search in eliotLog.log for USG ";
+        read klucz2
+        echo "Enter date in format 2022-03-15-02"
+        read date
+echo "############################# USG nas_usg/eliotLog.log for $klucz2  #############################################"
+##checkout needed, not ouputing eliotLog for usg by id
+        zgrep $klucz2 /folder/nas_usg/sws*/logs/sws/usg-cert*/eliotLog.log.$date
+
+elif [ "$answer" = "3" ]
+then
+        echo "Enter keyword e.g cid: ";
+        read klucz4
+        echo "Enter date in format 2022-03-15-02"
+        read date
+echo "############################# 2SG bus*/2sg/2sg-transactions.log for $klucz4 #############################################"
+        zgrep $klucz4 /folder/nas_bus/swsvlc*/logs/sws/bus*/2sg/2sg-transactions.log.$date
+
+elif [ "$answer" = "4" ]
+then
+        echo "Logs for 2sg / Enter keyword e.g cid: ";
+        read klucz3
+        echo "Enter date in format 2022-03-15-02 ## only with 1h delay because 2sg.log is rotated every hour ##"
+        read date
+echo "############################# 2SG bus*/2sg/2sg.log for $klucz3 #############################################"
+        zgrep $klucz3 /folder/nas_bus/swsvlc*/logs/sws/bus*/2sg/2sg.log.""$date"".gz
+
+elif [ "$answer" = "5" ]
+then
+        echo "Enter keyword e.g transaction ID ";
+        read klucz5
+        echo "Enter date in format 2022-03-15-02"
+        read date
+echo "############################# BUS nas_bus/bus.tx.log log for $klucz5 #############################################"
+        zgrep $klucz5 /folder/nas_bus/swsvlc*/logs/sws/bus-cert*/bus.tx.log.$date
+
+
+elif [ "$answer" = "6" ]
+then
+        echo "Enter keyword e.g transaction ID ";
+        read klucz6
+        echo "Enter date in format 2022-03-15-02"
+        read date
+echo "############################# BUS nas_bus/bus.log log for $klucz6 #############################################"
+	zgrep $klucz6 /folder/nas_bus/swsvlc*/logs/sws/bus-cert*/bus.log.$date
+fi
