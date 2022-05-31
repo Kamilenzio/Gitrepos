@@ -15,12 +15,12 @@ then
         echo "Enter date in format 2022-03-15-02"
         read date
 echo "############################# USG log enterpriseLog.log for $klucz1 #############################################"
-        zgrep ""$klucz1"" /sabre/nas_usg/sws*/logs/sws/usg*/enterpriseLog.log.$date
+        zgrep ""$klucz1"" /folder/nas_usg/sws*/logs/sws/usg*/enterpriseLog.log.$date
 echo "############################# TPFC log transaction.log for $klucz1  #############################################"
-        zgrep ""$klucz1"" /sabre/nas_tpfc/sws*/logs/sws/tpfc*/transaction.log.$date
+        zgrep ""$klucz1"" /folder/nas_tpfc/sws*/logs/sws/tpfc*/transaction.log.$date
 echo "##################### Enter id: from enterpriseLog.log to check TPFC eliotLog.log ###############"
 	read eliot
-	zgrep ""$eliot"" /sabre/nas_tpfc/sws*/logs/sws/tpfc*/eliotLog.log.$date
+	zgrep ""$eliot"" /folder/nas_tpfc/sws*/logs/sws/tpfc*/eliotLog.log.$date
 
 elif [ "$answer" = "2" ]
 then
@@ -30,7 +30,7 @@ then
         read date
 echo "############################# USG nas_usg/eliotLog.log for $klucz2  #############################################"
 ##checkout needed, not ouputing eliotLog for usg by id
-        zgrep $klucz2 /sabre/nas_usg/sws*/logs/sws/usg-cert*/eliotLog.log.$date
+        zgrep $klucz2 /folder/nas_usg/sws*/logs/sws/usg-cert*/eliotLog.log.$date
 
 elif [ "$answer" = "3" ]
 then
@@ -38,8 +38,8 @@ then
         read klucz4
         echo "Enter date in format 2022-03-15-02"
         read date
-echo "############################# 2SG bus*/2sg/2sg-transactions.log for $klucz4 #############################################"    
-        zgrep $klucz4 /sabre/nas_bus/swsvlc*/logs/sws/bus*/2sg/2sg-transactions.log.$date
+echo "############################# 2SG bus*/2sg/2sg-transactions.log for $klucz4 #############################################"
+        zgrep $klucz4 /folder/nas_bus/swsvlc*/logs/sws/bus*/2sg/2sg-transactions.log.$date
 
 elif [ "$answer" = "4" ]
 then
@@ -48,7 +48,7 @@ then
         echo "Enter date in format 2022-03-15-02 ## only with 1h delay because 2sg.log is rotated every hour ##"
         read date
 echo "############################# 2SG bus*/2sg/2sg.log for $klucz3 #############################################"
-        zgrep $klucz3 /sabre/nas_bus/swsvlc*/logs/sws/bus*/2sg/2sg.log.""$date"".gz
+        zgrep $klucz3 /folder/nas_bus/swsvlc*/logs/sws/bus*/2sg/2sg.log.""$date"".gz
 
 elif [ "$answer" = "5" ]
 then
@@ -57,7 +57,7 @@ then
         echo "Enter date in format 2022-03-15-02"
         read date
 echo "############################# BUS nas_bus/bus.tx.log log for $klucz5 #############################################"
-        zgrep $klucz5 /sabre/nas_bus/swsvlc*/logs/sws/bus-cert*/bus.tx.log.$date
+        zgrep $klucz5 /folder/nas_bus/swsvlc*/logs/sws/bus-cert*/bus.tx.log.$date
 
 
 elif [ "$answer" = "6" ]
@@ -67,5 +67,5 @@ then
         echo "Enter date in format 2022-03-15-02"
         read date
 echo "############################# BUS nas_bus/bus.log log for $klucz6 #############################################"
-	zgrep $klucz6 /sabre/nas_bus/swsvlc*/logs/sws/bus-cert*/bus.log.$date
+	zgrep $klucz6 /folder/nas_bus/swsvlc*/logs/sws/bus-cert*/bus.log.$date
 fi
