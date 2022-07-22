@@ -1,0 +1,128 @@
+body
+{
+	background-color: #404040;
+	font-family:'Lato', sans-serif;
+}
+
+#container
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+ /* styl okreslony dla konkretnego diva dodajemy hasha po to zeby oznaczyc, ze element o tym id chcemy komponowac. hasha dajemy jak uzywamy czegos raz a kropki jak uzywamy classes czyli jak wiele razy chcemy tego */
+
+#logo
+{
+	color:white;
+	margin-top: 20px;
+	font-size: 44px;
+	letter-spacing: 3px;
+	font-weight: 900;
+	
+}
+#menu
+{
+	background-color: #303030;
+	margin-top:20px;
+	color: white;
+	padding: 10px;
+	
+}
+#topbar
+{
+	background-color: #438790;
+	color: white;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	height: 170px;
+}
+#topbarleft
+{
+	float:left;
+	padding: 20px;
+	width: 138px;
+	text-align:center;
+	border-right: 2px dotted #cccccc;
+}
+#topbarright
+{
+	float:left;
+	padding: 20px;
+	width: 760px;
+	font-size: 16px;
+	text-align:justify;
+}
+#sidebar
+{
+	float:left;
+	width:148px;
+	min-height:620px;
+	padding:20px;
+	background-color: lightgray;
+	text-align: center;
+	font-size: 18px;
+	border-right: 2px dotted #555555
+}
+#content
+{
+	float: left;
+	padding:40px;
+	width: 730px;
+	background-color: dedede;
+	min-height: 580px;
+	text-align: justify;
+}
+#footer
+{
+	clear:both;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	font-size: 18px;
+}
+
+.option /* jest to klasa dotyczaca menu ktore jest zaznaczone jako div=option w htmlu*/
+{
+	float:left;
+	min-width:50px;
+	height:25px;
+	font-size:18px;
+	padding: 10px;
+	border-right: 2px dotted #444444;
+	opacity: 0.8;
+}
+.option:hover
+{
+	background-color: #000000;
+	cursor: pointer;
+}
+.optionleft
+{
+	height:25px;
+	font-size:18px;
+	padding: 10px;
+	border-bottom: 2px dotted #444444;
+	opacity: 0.8;
+}
+.optionleft:hover
+{
+	background-color: #f36742;
+	color: white;
+	cursor: pointer;
+
+}
+.bigtitle
+{
+	font-size: 35px;
+	font-weight:900;
+	letter-spacing: 2px;
+}
+.solidline
+{
+	height:5px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #f07c1d
+}
