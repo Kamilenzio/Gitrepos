@@ -1,6 +1,8 @@
 import math
 import pytest
 
+#to verify unit tests use python -m pytest .\testy_lab4.py -vvv
+
 def quadratic_equation(a, b, c):
     # obliczanie delta
     delta = b**2 - 4*a*c
