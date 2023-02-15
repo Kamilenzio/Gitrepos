@@ -1,1 +1,2 @@
-TinDog Starting Files
+Final training project of TinDog
+
